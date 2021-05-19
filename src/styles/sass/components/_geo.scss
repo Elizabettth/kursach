@@ -1,0 +1,29 @@
+.geo {
+  display: grid;
+  grid-area: geo;
+  background: #fff;
+  border-radius: 8px;
+  max-width: 350px;
+
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__location {
+    display: flex;
+  }
+
+  &__country {
+    margin-right: 8px;
+  }
+
+  &__city {
+    opacity: 0.6;
+  }
+
+  &__img {
+    align-items: center;
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,28 @@
+.graphic {
+  overflow: auto;
+  display: grid;
+  grid-area: graph;
+  background: rgb(255, 255, 255);
+  border-radius: 8px;
+
+  &__heading {
+    display: flex;
+    align-items: center;
+    padding-right: 50px;
+  }
+
+  &__input-data {
+    padding: 0 50px 0 200px;
+    border: none;
+  }
+
+  &__checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-left: 6px;
+  }
+
+  &__checkbox {
+    margin-left: 6px;
+  }
+}

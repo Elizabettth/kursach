@@ -1,0 +1,55 @@
+@media (max-width: 769px) {
+  .app {
+    grid-template-columns: 1fr;
+  }
+
+  .app__big-bg {
+    display: none;
+  }
+
+  .app__little-bg {
+    display: none;
+  }
+
+  .main {
+    gap: 10px;
+    margin: 0 auto;
+    text-align: -webkit-center;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "card"
+      "card"
+      "card"
+      "graph"
+      "dia"
+      "gist"
+      "geo";
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .header {
+    font-size: 0.7rem;
+  }
+
+  .header__bell {
+    display: none;
+  }
+
+  .header__form {
+    display: none;
+  }
+
+  .geo__img {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 950px) {
+  .dia__img {
+    margin-right: 0;
+  }
+}

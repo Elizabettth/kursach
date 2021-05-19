@@ -1,0 +1,49 @@
+.app {
+  max-width: 1300px;
+  position: relative;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  grid-template-areas: "nav main";
+  box-sizing: border-box;
+  overflow: hidden;
+
+  &__big-bg {
+    position: absolute;
+    right: 300px;
+    top: -930px;
+    z-index: 0;
+  }
+
+  &__little-bg {
+    position: absolute;
+    right: -290px;
+    bottom: -400px;
+    z-index: 1;
+  }
+}
+
+.main {
+  display: grid;
+  grid-area: main;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 50px 150px 250px 250px;
+  grid-template-areas:
+    "header header header"
+    "card card card"
+    "graph graph dia"
+    "gist gist geo";
+  grid-gap: 20px;
+  background: #eff3f9;
+  padding: 20px;
+  z-index: 1;
+
+  &__block {
+    margin: 5px;
+    padding: 10px;
+  }
+
+  &__block:hover {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+}

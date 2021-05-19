@@ -1,0 +1,33 @@
+.dia {
+  display: grid;
+  max-width: 340px;
+  grid-area: dia;
+  background: rgb(255, 255, 255);
+  border-radius: 8px;
+
+  &__content {
+    display: flex;
+  }
+
+  &__img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 30px;
+  }
+  &__item {
+    &::before {
+      border-radius: 5px;
+      margin-right: 5px;
+      vertical-align: middle;
+      content: "";
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      background: #e786d7;
+    }
+    &:last-child::before {
+      background: #7f7fd5;
+    }
+  }
+}

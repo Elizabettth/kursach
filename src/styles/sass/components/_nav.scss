@@ -1,0 +1,56 @@
+.nav {
+  display: grid;
+  grid-area: nav;
+  position: sticky;
+  top: 0;
+  justify-items: center;
+  align-content: space-between;
+  z-index: 1;
+
+  &__logo {
+    transition: 300ms;
+    margin-top: 25px;
+  }
+
+  &__logo:hover {
+    transform: scale(1.1);
+  }
+
+  &__icons {
+    display: grid;
+    justify-items: center;
+  }
+
+  &__icon-container {
+    margin: 15px 0;
+    &:hover .nav__icon {
+      fill: #7f7fd5;
+    }
+  }
+
+  &__icon {
+    fill: #dfe6f1;
+  }
+
+  &__page {
+    position: relative;
+  }
+
+  &__line {
+    position: absolute;
+    top: 0;
+    left: -30px;
+  }
+
+  &__check-box-dark {
+    display: none;
+  }
+
+  &__check-box:hover {
+    display: none;
+  }
+
+  &__check-box:hover + .nav__check-box-dark {
+    display: block;
+  }
+}
